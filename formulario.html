@@ -1,0 +1,81 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+    </style>
+    <script src="./script.js">
+    </script>
+</head>
+
+<body>
+    <a href="https://site.rbmweb.com.br/">
+        <h1><img src="https://www.rbmweb.com.br/img/logorbm.png" alt=""></h1>
+    </a>
+    <p>Formulário para curso de programação Web.</p>
+    <form action="server.php" method="post">
+        <div>
+            <label>E-mail: </label>
+            <input id="email" name="email" type="text" placeholder="Digite o e-mail" />
+        </div>
+        <br>
+        <div>
+            <label>Nome: </label>
+            <input id=nome name="nome" type="text" placeholder="Digite o seu nome" />
+        </div>
+        <br>
+        <div>
+            <label>Idade: </label>
+            <input id=idade name="idade" type="number" />
+        </div>
+        <br>
+        <div>
+            <label>Experiência com programação:</label><br>
+            <input type="radio" id="1" value="Pouca" name="exp" />Pouca ou Nenhuma
+            <input type="radio" id="2" value="Intermediária" name="exp" />Intermediária
+            <input type="radio" id="3" value="Avançada" name="exp" />Avançada
+        </div>
+        <br>
+        <div>
+            <label>Gênero:</label><br>
+            <input type="radio" value="Masculino" name="genero" />Masculino
+            <input type="radio" value="Feminino" name="genero" />Feminino
+        </div>
+        <br>
+        <div>
+            <label>Endereço</lable>
+                <br>
+                Cidade: <input type="text" placeholder="Digite sua Cidade " id="cidade" name="cidade" />
+                <br><br>
+                Bairro: <input type="text" placeholder="Digite seu Bairro " id="bairro" name="bairro" />
+                <br>
+                <br>
+                Rua: <input type="text" placeholder="Digite sua Rua" id="rua" name="rua" />
+                N°: <input type="number" name="ncasa" id="ncasa" />
+                <br>
+        </div>
+        <br>
+        <div>
+            <label>Cargo</label><br>
+            <select id="cargo" name="cargo">
+                <option value="00">Selecione...</option>
+                <option value="01">Escravo</option>
+                <option value="02">Estagiário</option>
+                <option value="03">Contratado</option>
+                <option value="04" disabled>Chefe</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <label>Por que quer trabalhar na Rbm?</label>
+            <br><br>
+            <textarea rows="10" cols="50" wrap="hard" name="comentario"
+                placeholder="Quero trabalhar na RBM porque..."></textarea><br />
+            <br>
+
+            <br>
+
+            <input id="enviar" type="submit" value="Enviar" onclick="return validaDados()" />
+    </form>
+</body>

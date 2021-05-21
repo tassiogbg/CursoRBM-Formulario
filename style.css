@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(4, 173, 252, 0.993);
+    background-image: url(http://site.rbmweb.com.br/wp-content/uploads/2019/06/rbm-bg-clouds.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black
+}
+p{
+    color: white;
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
+    }
+input[type=text] {
+    border: 1px solid black;
+    height: 25px;
+    width: 25%;
+    border-radius: 2px;
+}
+input[type=number]{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 40px;
+}
+input[name=ncasa]{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 60px;
+}
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    width: 40%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+  }
+input[type="submit"]{
+    height: 30px;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+}
